@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @sagarv48
 - 👀 I’m interested in software engineering, always exploring new things, learning and applying.
-- 🌱 I’m currently learning performance engineering, exploring tools like jmeter/blazemeter and taurus configurations.
+- 🌱 I’m currently building knowledge systems using AI for better developer quality of life.
 - 💞️ I’m looking to collaborate on exciting new feature developments or integrating new technologies.
 - 📫 How to reach me - email me @ sagarv.kumar48@gmail.com  
 
