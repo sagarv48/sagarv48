@@ -20,12 +20,13 @@ I architect and build enterprise software with a focus on **eliminating operatio
 - **Database Consolidation Over Vector Sprawl**: Solving enterprise RAG directly on battle-tested relational engines (PostgreSQL with `pgvector` HNSW + BM25 full-text search) instead of introducing costly, un-audited secondary vector databases.
 - **Deterministic Action Contracts for Autonomous AI**: Probabilistic models should draft plans; deterministic, out-of-band policy engines with HMAC-SHA256 signatures must govern and execute them.
 - **Zero-Trust Enterprise Ingestion**: Guaranteeing that enterprise data pipelines automatically scrub secrets, API keys, and PII before chunks ever enter an embedding or vector index.
+- **Interactive Time-Travel Debugging for Agents**: Replacing primitive "restart-from-scratch" batch debugging with microsecond state checkpoints, anti-oscillation watchdogs, and live memory rewind.
 
 ---
 
-## 🚀 Featured Flagship Ecosystem: The Fabric Suite
+## 🚀 Featured Flagship Ecosystem
 
-A cohesive, open-source infrastructure stack designed for enterprise-grade generative AI, retrieval, and agent governance.
+A cohesive, open-source infrastructure stack designed for enterprise-grade generative AI, retrieval, agent governance, and time-travel debugging.
 
 ### 1. [Knowledge Fabric](https://github.com/sagarv48/knowledge-fabric)
 > **Vendor-neutral, governance-first hybrid evidence retrieval for AI systems.**
@@ -72,14 +73,29 @@ A cohesive, open-source infrastructure stack designed for enterprise-grade gener
 
 ---
 
+### 4. [Unloop](https://github.com/sagarv48/unloop)
+> **The time-travel debugger for AI agents — pause, rewind, and mutate memory in-flight.**
+
+[![CI](https://github.com/sagarv48/unloop/actions/workflows/ci.yml/badge.svg)](https://github.com/sagarv48/unloop/actions)
+[![Release](https://img.shields.io/badge/Release-v0.1.0-blue.svg)](https://github.com/sagarv48/unloop/releases)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/sagarv48/unloop/blob/main/LICENSE)
+[![PyPI](https://img.shields.io/badge/PyPI-unloop-3776AB?logo=pypi&logoColor=white)](https://pypi.org/project/unloop/)
+
+- **Interactive Time-Travel Debugging**: Step backward through cognitive turns and inspect execution history like a video player instead of restarting multi-turn agent runs from scratch.
+- **Anti-Oscillation Watchdog**: Automated sliding-window loop detection catching critique spirals, identical tool calls, and state cycles before burning token budgets.
+- **In-Place State Mutation & DAG Branching**: Mutate corrupted agent memory in-flight and fork exploratory branches without restarting.
+- **High-Performance SQLite WAL Cassettes**: Microsecond commit overhead (<2ms) for portable, zero-cost deterministic replay in CI/CD pipelines.
+
+---
+
 ## 🛠️ Systems & Technical Competencies
 
 | Domain | Core Technologies & Architectural Patterns |
 | :--- | :--- |
-| **Databases & Vector Storage** | **PostgreSQL** (HNSW, IVFFlat, RLS, WAL, Partitioning), `pgvector`, Redis, SQLite, ACID Transactions, Connection Pooling (PgBouncer) |
-| **AI Infrastructure & RAG** | **Model Context Protocol (MCP)**, FastMCP, Hybrid Retrieval (BM25 + Dense Vectors), Reciprocal Rank Fusion (RRF), Cross-Encoder Reranking, Ollama |
-| **Agent Safety & Governance** | Cryptographic Non-Repudiation (HMAC-SHA256), Deterministic Action Contracts, Indirect Prompt Injection Defense, STRIDE Threat Modeling |
-| **Languages & Runtimes** | **Python** (psycopg3, FastAPI, FastMCP, PyYAML, Pytest), **Java / Kotlin**, **Go**, Shell Scripting (Bash / PowerShell) |
+| **Databases & Vector Storage** | **PostgreSQL** (HNSW, IVFFlat, RLS, WAL, Partitioning), `pgvector`, Redis, **SQLite WAL**, ACID Transactions, Connection Pooling (PgBouncer) |
+| **AI Infrastructure & Tooling** | **unloop (Agent Time-Travel Debugger)**, **Model Context Protocol (MCP)**, FastMCP, Hybrid Retrieval (BM25 + Dense Vectors), Reciprocal Rank Fusion (RRF), Cross-Encoder Reranking, Ollama |
+| **Agent Safety & Governance** | Cryptographic Non-Repudiation (HMAC-SHA256), Deterministic Action Contracts, Indirect Prompt Injection Defense, Anti-Oscillation Watchdogs, STRIDE Threat Modeling |
+| **Languages & Runtimes** | **Python** (psycopg3, FastAPI, FastMCP, Textual, Click, PyYAML, Pytest), **Java / Kotlin**, **Go**, Shell Scripting (Bash / PowerShell) |
 | **Cloud & Distributed Ops** | **Kubernetes**, **Helm (OCI)**, **Docker** (Multi-arch / Non-root), GitHub Actions CI/CD, Azure DevOps, Linux Systems Internals |
 
 ---
