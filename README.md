@@ -1,32 +1,30 @@
-# Vinay Kumar Ksheerasagar
-
-<p align="left">
-  <strong>Systems & AI Infrastructure Architect • Open-Source Builder</strong><br>
-  <em>Engineering resilient distributed data systems, verifiable autonomous agent runtimes, and high-performance ACID architectures.</em>
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,18&height=220&section=header&text=Vinay%20Kumar%20Ksheera%20Sagar&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Staff%20Software%20Architect%20%7C%20Enterprise%20AI%20Data%20Governance%20%26%20Zero-Trust%20Infrastructure&descAlignY=60&descAlign=50" width="100%" alt="Header" />
 </p>
 
-<p align="left">
-  <a href="https://www.linkedin.com/in/vinaykumar-ksheerasagar-92270024/"><img src="https://img.shields.io/badge/LinkedIn-Vinay%20Kumar%20Ksheerasagar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Profile"></a>
-  <a href="mailto:sagarv.kumar48@gmail.com"><img src="https://img.shields.io/badge/Email-sagarv.kumar48%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-  <a href="https://github.com/sagarv48?tab=repositories"><img src="https://img.shields.io/badge/Focus-Enterprise%20AI%20%26%20Data%20Systems-6C5CE7?style=for-the-badge" alt="Architecture Focus"></a>
+<p align="center">
+  <a href="https://linkedin.com/in/vinaykumar-ksheerasagar-92270024"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="mailto:sagarv.kumar48@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://github.com/sagarv48"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
 </p>
 
 ---
 
-## 🏛️ Engineering Philosophy & Focus
+## 🎯 Architectural Philosophy & Engineering Convictions
 
-I architect and build enterprise software with a focus on **eliminating operational debt, ensuring non-repudiation, and replacing bloated infrastructure with sound systems design**:
+I architect, build, and maintain production-grade open-source systems specializing in **Enterprise AI Data Governance**, **Zero-Trust Retrieval Infrastructure**, **Deterministic Action Contracts**, and **Time-Travel Debugging for Autonomous Agents**.
 
 - **Database Consolidation Over Vector Sprawl**: Solving enterprise RAG directly on battle-tested relational engines (PostgreSQL with `pgvector` HNSW + BM25 full-text search) instead of introducing costly, un-audited secondary vector databases.
+- **Zero-Trust Cryptographic Tripwires**: Watermarking retrieved enterprise context with 4-ary zero-width HMAC tokens and scanning streaming egress at wire speed (<0.8ms) to kill prompt-injection exfiltration before data leaves the network.
 - **Deterministic Action Contracts for Autonomous AI**: Probabilistic models should draft plans; deterministic, out-of-band policy engines with HMAC-SHA256 signatures must govern and execute them.
 - **Zero-Trust Enterprise Ingestion**: Guaranteeing that enterprise data pipelines automatically scrub secrets, API keys, and PII before chunks ever enter an embedding or vector index.
 - **Interactive Time-Travel Debugging for Agents**: Replacing primitive "restart-from-scratch" batch debugging with microsecond state checkpoints, anti-oscillation watchdogs, and live memory rewind.
 
 ---
 
-## 🚀 Featured Flagship Ecosystem
+## 🌟 Featured Flagship Ecosystem
 
-A cohesive, open-source infrastructure stack designed for enterprise-grade generative AI, retrieval, agent governance, and time-travel debugging.
+A cohesive, open-source infrastructure stack designed for enterprise-grade generative AI, retrieval, data security, agent governance, and time-travel debugging.
 
 ### 1. [Knowledge Fabric](https://github.com/sagarv48/knowledge-fabric)
 > **Vendor-neutral, governance-first hybrid evidence retrieval for AI systems.**
@@ -44,7 +42,22 @@ A cohesive, open-source infrastructure stack designed for enterprise-grade gener
 
 ---
 
-### 2. [Intent Fabric](https://github.com/sagarv48/intent-fabric)
+### 2. [CanaryFabric](https://github.com/sagarv48/canary-fabric)
+> **Invisible cryptographic tripwires and sub-millisecond data-leak circuit breakers for RAG & AI agents.**
+
+[![CI](https://img.shields.io/badge/CI-passing-brightgreen.svg)](https://github.com/sagarv48/canary-fabric/actions)
+[![Release](https://img.shields.io/badge/Release-v0.1.0-blue.svg)](https://github.com/sagarv48/canary-fabric/releases)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/sagarv48/canary-fabric/blob/main/LICENSE)
+[![MCP Native](https://img.shields.io/badge/MCP-Native%20Security-purple.svg)](https://modelcontextprotocol.io)
+
+- **4-ary Zero-Width Steganography**: Injects 64-bit HMAC-derived canary tokens (`\u200B`, `\u200C`, `\u200D`, `\uFEFF`) invisibly into retrieved chunks, 100% invisible to humans and preserved in LLM context.
+- **Sub-Millisecond (<0.8ms / 3.12µs) Stream Circuit Breaker**: Zero-buffering sliding ring buffer scanning outbound SSE streams and tool parameters, instantly severing the socket upon exfiltration attempt.
+- **Cryptographic Leak Certificates**: Issues tamper-evident, HMAC-signed forensic certificates binding the leak to the source chunk, tenant ID, and prompt hash.
+- **Universal Adapters**: Native integration with Knowledge Fabric, Intent Fabric, FastMCP `@canary_gate`, and standalone streaming reverse proxy for OpenAI / Anthropic / LiteLLM.
+
+---
+
+### 3. [Intent Fabric](https://github.com/sagarv48/intent-fabric)
 > **Policy-governed autonomous agent planning and non-repudiation execution framework.**
 
 [![CI](https://img.shields.io/badge/CI-passing-brightgreen.svg)](https://github.com/sagarv48/intent-fabric/actions)
@@ -59,7 +72,7 @@ A cohesive, open-source infrastructure stack designed for enterprise-grade gener
 
 ---
 
-### 3. [Knowledge Fabric Enterprise Adapters](https://github.com/sagarv48/knowledge-fabric-enterprise-adapters)
+### 4. [Knowledge Fabric Enterprise Adapters](https://github.com/sagarv48/knowledge-fabric-enterprise-adapters)
 > **Enterprise SaaS connectors, automated DLP secret scrubbing, and cryptographic write gates.**
 
 [![CI](https://img.shields.io/badge/CI-passing-brightgreen.svg)](https://github.com/sagarv48/knowledge-fabric-enterprise-adapters/actions)
@@ -73,7 +86,7 @@ A cohesive, open-source infrastructure stack designed for enterprise-grade gener
 
 ---
 
-### 4. [Unloop](https://github.com/sagarv48/unloop)
+### 5. [Unloop](https://github.com/sagarv48/unloop)
 > **The time-travel debugger for AI agents — pause, rewind, and mutate memory in-flight.**
 
 [![CI](https://github.com/sagarv48/unloop/actions/workflows/ci.yml/badge.svg)](https://github.com/sagarv48/unloop/actions)
@@ -93,7 +106,7 @@ A cohesive, open-source infrastructure stack designed for enterprise-grade gener
 | Domain | Core Technologies & Architectural Patterns |
 | :--- | :--- |
 | **Databases & Vector Storage** | **PostgreSQL** (HNSW, IVFFlat, RLS, WAL, Partitioning), `pgvector`, Redis, **SQLite WAL**, ACID Transactions, Connection Pooling (PgBouncer) |
-| **AI Infrastructure & Tooling** | **unloop (Agent Time-Travel Debugger)**, **Model Context Protocol (MCP)**, FastMCP, Hybrid Retrieval (BM25 + Dense Vectors), Reciprocal Rank Fusion (RRF), Cross-Encoder Reranking, Ollama |
+| **AI Infrastructure & Security** | **CanaryFabric (Cryptographic Tripwires)**, **unloop (Agent Time-Travel Debugger)**, **Model Context Protocol (MCP)**, FastMCP, Hybrid Retrieval (BM25 + Dense Vectors), Reciprocal Rank Fusion (RRF), Cross-Encoder Reranking |
 | **Agent Safety & Governance** | Cryptographic Non-Repudiation (HMAC-SHA256), Deterministic Action Contracts, Indirect Prompt Injection Defense, Anti-Oscillation Watchdogs, STRIDE Threat Modeling |
 | **Languages & Runtimes** | **Python** (psycopg3, FastAPI, FastMCP, Textual, Click, PyYAML, Pytest), **Java / Kotlin**, **Go**, Shell Scripting (Bash / PowerShell) |
 | **Cloud & Distributed Ops** | **Kubernetes**, **Helm (OCI)**, **Docker** (Multi-arch / Non-root), GitHub Actions CI/CD, Azure DevOps, Linux Systems Internals |
@@ -109,7 +122,7 @@ A cohesive, open-source infrastructure stack designed for enterprise-grade gener
 
 ---
 
-## 🤝 Connect & Inquiries
+## 💬 Connect & Inquiries
 
 I am always interested in discussing high-concurrency systems architecture, enterprise AI data governance, and open-source infrastructure:
 
