@@ -42,7 +42,7 @@ A cohesive, open-source infrastructure stack designed for enterprise-grade gener
 
 ---
 
-### 2. [CanaryFabric](https://github.com/sagarv48/canary-fabric)
+### 2. [Canary Fabric (canary-fabric)](https://github.com/sagarv48/canary-fabric)
 > **Invisible cryptographic tripwires and sub-millisecond data-leak circuit breakers for RAG & AI agents.**
 
 [![CI](https://img.shields.io/badge/CI-passing-brightgreen.svg)](https://github.com/sagarv48/canary-fabric/actions)
@@ -106,7 +106,7 @@ A cohesive, open-source infrastructure stack designed for enterprise-grade gener
 | Domain | Core Technologies & Architectural Patterns |
 | :--- | :--- |
 | **Databases & Vector Storage** | **PostgreSQL** (HNSW, IVFFlat, RLS, WAL, Partitioning), `pgvector`, Redis, **SQLite WAL**, ACID Transactions, Connection Pooling (PgBouncer) |
-| **AI Infrastructure & Security** | **CanaryFabric (Cryptographic Tripwires)**, **unloop (Agent Time-Travel Debugger)**, **Model Context Protocol (MCP)**, FastMCP, Hybrid Retrieval (BM25 + Dense Vectors), Reciprocal Rank Fusion (RRF), Cross-Encoder Reranking |
+| **AI Infrastructure & Security** | **Canary Fabric (canary-fabric - Cryptographic Tripwires)**, **unloop (Agent Time-Travel Debugger)**, **Model Context Protocol (MCP)**, FastMCP, Hybrid Retrieval (BM25 + Dense Vectors), Reciprocal Rank Fusion (RRF), Cross-Encoder Reranking |
 | **Agent Safety & Governance** | Cryptographic Non-Repudiation (HMAC-SHA256), Deterministic Action Contracts, Indirect Prompt Injection Defense, Anti-Oscillation Watchdogs, STRIDE Threat Modeling |
 | **Languages & Runtimes** | **Python** (psycopg3, FastAPI, FastMCP, Textual, Click, PyYAML, Pytest), **Java / Kotlin**, **Go**, Shell Scripting (Bash / PowerShell) |
 | **Cloud & Distributed Ops** | **Kubernetes**, **Helm (OCI)**, **Docker** (Multi-arch / Non-root), GitHub Actions CI/CD, Azure DevOps, Linux Systems Internals |
