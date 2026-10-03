@@ -19,6 +19,7 @@ I architect, build, and maintain production-grade open-source systems specializi
 - **Deterministic Action Contracts for Autonomous AI**: Probabilistic models should draft plans; deterministic, out-of-band policy engines with HMAC-SHA256 signatures must govern and execute them.
 - **Zero-Trust Enterprise Ingestion**: Guaranteeing that enterprise data pipelines automatically scrub secrets, API keys, and PII before chunks ever enter an embedding or vector index.
 - **Interactive Time-Travel Debugging for Agents**: Replacing primitive "restart-from-scratch" batch debugging with microsecond state checkpoints, anti-oscillation watchdogs, and live memory rewind.
+- **Deterministic Prompt Cache Alignment**: Eliminating accidental cache-busting and cutting LLM inference costs by 50%+ through strict prefix canonicalization (RFC 8785) and static/ephemeral partition boundaries.
 
 ---
 
@@ -101,14 +102,29 @@ A cohesive, open-source infrastructure stack designed for enterprise-grade gener
 
 ---
 
+### 6. [CacheAlign](https://github.com/sagarv48/cachealign)
+> **Autonomous prompt cache optimizer & prefix alignment middleware for AI agents.**
+
+[![CI](https://github.com/sagarv48/cachealign/actions/workflows/ci.yml/badge.svg)](https://github.com/sagarv48/cachealign/actions)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/sagarv48/cachealign/blob/main/LICENSE)
+[![PyPI](https://img.shields.io/badge/PyPI-cachealign-3776AB?logo=pypi&logoColor=white)](https://pypi.org/project/cachealign/)
+[![Docker](https://img.shields.io/badge/GHCR-Sidecar%20Proxy-2496ED?logo=docker&logoColor=white)](https://ghcr.io/sagarv48/cachealign-proxy)
+
+- **Dual-Form Factor Architecture**: In-process 1-line Python SDK (`cachealign-py`) & high-performance Rust sidecar reverse proxy (`cachealign-proxy`).
+- **Deterministic Prefix Partitioning**: Categorizes agent system prompts and history into static invariants, session contexts, and ephemeral dynamic variables.
+- **RFC 8785 Schema Canonicalization**: Cryptographic JSON canonicalization of tool/function calling definitions eliminating accidental cache busts.
+- **Empirical Cost Reduction**: Validated 55.2% token cost reduction and 74.7% cache hit rate across multi-turn enterprise ReAct agent loops.
+
+---
+
 ## 🛠️ Systems & Technical Competencies
 
 | Domain | Core Technologies & Architectural Patterns |
 | :--- | :--- |
 | **Databases & Vector Storage** | **PostgreSQL** (HNSW, IVFFlat, RLS, WAL, Partitioning), `pgvector`, Redis, **SQLite WAL**, ACID Transactions, Connection Pooling (PgBouncer) |
-| **AI Infrastructure & Security** | **Canary Fabric (canary-fabric - Cryptographic Tripwires)**, **unloop (Agent Time-Travel Debugger)**, **Model Context Protocol (MCP)**, FastMCP, Hybrid Retrieval (BM25 + Dense Vectors), Reciprocal Rank Fusion (RRF), Cross-Encoder Reranking |
+| **AI Infrastructure & Security** | **CacheAlign (Prompt Cache Alignment)**, **Canary Fabric (Cryptographic Tripwires)**, **unloop (Agent Time-Travel Debugger)**, **Model Context Protocol (MCP)**, FastMCP, Hybrid Retrieval (BM25 + Dense Vectors), Reciprocal Rank Fusion (RRF), Cross-Encoder Reranking |
 | **Agent Safety & Governance** | Cryptographic Non-Repudiation (HMAC-SHA256), Deterministic Action Contracts, Indirect Prompt Injection Defense, Anti-Oscillation Watchdogs, STRIDE Threat Modeling |
-| **Languages & Runtimes** | **Python** (psycopg3, FastAPI, FastMCP, Textual, Click, PyYAML, Pytest), **Java / Kotlin**, **Go**, Shell Scripting (Bash / PowerShell) |
+| **Languages & Runtimes** | **Python** (psycopg3, FastAPI, FastMCP, Textual, Click, PyYAML, Pytest), **Rust** (Axum, Tokio), **Java / Kotlin**, **Go**, Shell Scripting (Bash / PowerShell) |
 | **Cloud & Distributed Ops** | **Kubernetes**, **Helm (OCI)**, **Docker** (Multi-arch / Non-root), GitHub Actions CI/CD, Azure DevOps, Linux Systems Internals |
 
 ---
